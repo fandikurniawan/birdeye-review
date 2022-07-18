@@ -1,0 +1,305 @@
+.sb-main-container {
+  padding: 15px;
+  background-color: #f4f4f4;
+}
+
+.sb-plugin-error{
+  display:block;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.sb-list{
+    width: 100%;
+    margin: auto;   
+    border: 1px solid rgba(119, 119, 119, 0.1);
+    background-color: #fefefe;    
+}
+
+.sb-result{
+  display: block;
+  position: relative;
+}
+
+.sb-review-container{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 25px;
+    flex-direction: row;
+    margin: 0 0 55px;
+    padding: 15px;
+}
+
+.sb-review-header{
+    width: 35%;
+}
+
+.sb-review-date {
+    color: #717171;
+    font-size: 15px;
+  }
+
+.sb-review-header .sb-reviewer h4{
+    margin: 5px 0;
+}
+
+.sb-avatar img {
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+ }
+
+.sb-rating-stars .sb-star{
+    color: #ff6900;
+    font-size: 1.35em;
+}
+
+.sb-review-source{
+    color:#0693e3;
+    font-size: 13px;
+ }
+
+.sb-review-body{
+    width: 65%;
+}
+
+.sb-review-comments p {
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  /*Tabs view*/
+  .sb-tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sb-tabs label {
+    background: rgba(239, 239, 239, 0.6);
+    border: 1px solid rgba(119, 119, 119, 0.1);
+    padding: .5em 1em;
+    cursor: pointer;
+    font-size: 14px;
+    order: 1;
+  }
+  
+  .sb-tab-content {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid rgba(119, 119, 119, 0.1);
+    background: #fefefe;
+    order: 2; 
+  }
+  
+  input[type=radio],
+  .sb-tab-content {
+    display: none;
+  }
+  
+  input[type=radio]:checked + label {
+    background: #fff;
+    border-bottom: 1px solid #f4f4f4;
+  }
+  
+  input[type=radio]:checked + label + div {
+    display: block;
+  }
+  
+ .sb-summary {
+    margin: 0 auto 55px;
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    border: 1px solid rgba(119, 119, 119, 0.1);
+    padding: 15px;
+    background-color: #fefefe;    
+  }
+
+  .sb-summary-cols {
+    padding: 15px 0;
+  }
+
+  .sb-summary-cols.sb-summary-logo {
+    width: 20%;
+    order: 1;
+  }
+
+  .sb-summary-cols.sb-summary-logo img {
+    width: 100%;
+  }
+
+  .sb-summary-cols.sb-summary-ratings {
+    width: 45%;
+    order: 2;
+  }
+
+  .sb-summary-cols.sb-summary-company {
+    width: 20%;
+    order: 3;
+  }
+
+  .sb-ratings{
+    display: flex;
+    justify-content: flex-start;    
+  }
+
+  .sb-premeter, .sb-postmeter {
+    padding: 0 5px;
+    font-size: 13px;
+    color: #777;
+  }
+  
+  .sb-ratings-meter{
+    height: 12px; 
+    position: relative;
+    background: #f4f4f4;
+    border-radius: 2px;
+    padding: 1px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  .sb-ratings-meter > .sb-meter {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #f57c00;
+    background-image: linear-gradient(
+      center bottom,
+      rgb(158, 96, 15) 37%,
+      rgb(175, 96, 22) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(241, 108, 18, 0.4);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sb-norating{
+    font-size: 11px;
+    color:#777;
+    padding: 0 5px;
+  }
+
+.sb-button,
+.sb-button-primary,
+.sb-button-secondary {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin: 0;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sb-button,
+.sb-button-secondary {
+    color: #555;
+    border-color: #cccccc;
+    background: #f7f7f7;
+    -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0,0,0,.08);
+    box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0,0,0,.08);
+    vertical-align: top;
+}
+
+p .sb-button {
+    vertical-align: baseline;
+}
+
+.sb-button:hover,
+.sb-button-secondary:hover,
+.sb-button:focus,
+.sb-button-secondary:focus {
+    background: #fafafa;
+    border-color: #999;
+    color: #222;
+}
+
+.sb-button:focus,
+.sb-button-secondary:focus {
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+    box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+
+.sb-button:active,
+.sb-button-secondary:active {
+    background: #eee;
+    border-color: #999;
+    color: #333;
+    -webkit-box-shadow: inset 0 2px 5px -3px rgba( 0, 0, 0, 0.5 );
+    box-shadow: inset 0 2px 5px -3px rgba( 0, 0, 0, 0.5 );
+}
+
+.sb-button-primary {
+    background: #2ea2cc;
+    border-color: #0074a2;
+    -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,0.5), 0 1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 1px 0 rgba(120,200,230,0.5), 0 1px 0 rgba(0,0,0,.15);
+    color: #fff;
+    text-decoration: none;
+}
+
+.sb-button-primary:hover,
+.sb-button-primary:focus {
+    background: #1e8cbe;
+    border-color: #0074a2;
+    -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,0.6);
+    box-shadow: inset 0 1px 0 rgba(120,200,230,0.6);
+    color: #fff;
+}
+
+.sb-button-primary:focus {
+    border-color: #0e3950;
+    -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,0.6), 1px 1px 2px rgba(0,0,0,0.4);
+    box-shadow: inset 0 1px 0 rgba(120,200,230,0.6), 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.sb-button-primary:active {
+    background: #1b7aa6;
+    border-color: #005684;
+    color: rgba(255,255,255,0.95);
+    -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+    vertical-align: top;
+}
+
+.sb-summary-company{
+  text-align: center;
+  padding-top: 0;
+}
+
+.sb-avg-rating,
+.sb-summary-company .sb-rating-stars,
+.sb-summary-company > p {
+  margin: 0 5px 0 0;
+}
+
+.sb-avg-rating h3{
+  margin: 0; 
+  font-size: 3.5em;
+  color: #313131;
+}
+
+.sb-summary-company > p > a{
+  font-size: 15px;
+  color: #777;
+}
